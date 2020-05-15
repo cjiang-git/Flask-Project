@@ -1,9 +1,13 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Apr 21 14:57:17 2020
+# *******************************************************
+# Effects Tester Module
+# Final
+# ENGI E1006
+# Charlie Jiang
+# cj2630
+# This is code for the final assignment
+# *******************************************************
 
-@author: etill
-"""
+
 
 #import statements
 from flask import Flask, render_template
@@ -16,17 +20,20 @@ app = Flask(__name__)
 def hello():
     return render_template("index.html")
 
+#accesses HTML code in homepage.html
 @app.route("/1006")
 def test(): 
     return render_template("homepage.html")
 
+#accesses HTML code in Fav_assign.html
 @app.route("/FavoriteAssignment")
 def favAss():
     return render_template("Fav_assign.html")
 
-@app.route("/My_Fall_Classes")
+#accesses HTML code in FallC.html
+@app.route("/My_Spring_Classes")
 def fallC():
-    return render_template("FallC.html")
+    return render_template("SpringC.html")
 
 
 
