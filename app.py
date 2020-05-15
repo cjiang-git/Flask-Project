@@ -24,6 +24,10 @@ def test():
 def favAss():
     return render_template("Fav_assign.html")
 
+@app.route("/My_Fall_Classes")
+def fallC():
+    return render_template("FallC.html")
+
 
 
 
