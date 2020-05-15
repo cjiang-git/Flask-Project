@@ -20,6 +20,13 @@ def hello():
 def test(): 
     return render_template("homepage.html")
 
+@app.route("/FavoriteAssignment")
+def favAss():
+    return render_template("Fav_assign.html")
+
+
+
+
 #start the server
 if __name__ == "__main__":
     app.run()
